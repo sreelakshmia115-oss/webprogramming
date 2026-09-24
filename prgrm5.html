@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fifth program</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Top black section */
+        .topbar {
+            height: 65px;
+            background-color: black;
+            color: white;
+            padding: 15px 7%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .right {
+            text-align: right;
+            line-height: 20px;
+        }
+
+        /* Main layout */
+        .container {
+            display: flex;
+        }
+
+        /* Left green sidebar */
+        .sidebar {
+            width: 220px;
+            min-height: 700px;
+            background-color: #4d884d;
+            padding: 15px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #123b82;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Main content */
+        .main {
+           
+            flex: 1;
+        }
+
+        /* Logo section */
+        .logo {
+           
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #06447e;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #70879a;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-size: 25px;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 34px;
+        }
+
+        .logo p {
+            margin: 0;
+            font-size: 17px;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            background-color: #073f7d;
+            min-height: 100px;
+            padding-left: 7%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 18px;
+            font-size: 14px;
+        }
+
+        .navbar a:hover {
+            background-color: #0b568d;
+        }
+
+        /* College image */
+        .hero {
+            height: 360px;
+            background-image: url("college.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Welcome text */
+        .welcome {
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .welcome h2 {
+            font-size: 38px;
+            margin: 0;
+        }
+
+        .welcome p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .hero{
+            background-image: url("mzc.png");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top black section -->
+    <div class="topbar">
+
+        <div>
+            <b>Call: 0468 - 2216325, 2217425</b>
+        </div>
+
+        <div class="right">
+            NAAC &nbsp; | &nbsp; Admission &nbsp; |<br>
+            Kadamanitta, Pathanamthitta, Kerala, India
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <!-- Left sidebar -->
+        <div class="sidebar">
+
+            <a href="#">TKMCE,Kollam</a>
+
+            <a href="#">MZCE,Kadamanitta</a>
+
+            <a href="#">EC,Thrissur</a>
+
+        </div>
+
+
+        <div class="main">
+
+            <!-- College logo -->
+            <div >
+
+               <center>
+                <img src="/logo.png" alt="College Logo">
+
+               </center>
+            
+
+            </div>
+
+
+            <!-- Navigation -->
+            <div class="navbar">
+
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">COURSES</a>
+                <a href="#">DEPARTMENTS</a>
+                <a href="#">FACILITIES</a>
+                <a href="#">ACTIVITIES</a>
+                <a href="#">RESOURCES</a>
+                <a href="#">PLACEMENT</a>
+                <a href="#">NAAC</a>
+                <a href="#">LOGIN</a>
+
+            </div>
+
+
+            <!-- Image/banner -->
+            <div class="hero">
+
+                <div class="welcome">
+                    <h2>WELCOME TO MZC</h2>
+                    <p>MOUNT ZION COLLEGE OF ENGINEERING</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
